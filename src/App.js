@@ -1,8 +1,7 @@
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-import "./App.scss";
-
 import Header from "./components/Header";
+import Currencies from "./containers/Currencies";
 
 function App() {
   return (
@@ -10,9 +9,9 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact>
-          {/* <Currencies /> */}
+          <Currencies />
         </Route>
-        <Route path="/setupCurrencies">{/* <Favourites /> */}</Route>
+        <Route path="/setupCurriences">{/* <Favourites /> */}</Route>
       </Switch>
     </Router>
   );

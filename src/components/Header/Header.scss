@@ -16,11 +16,12 @@
 
   &__container {
     margin: 0 auto;
-    max-width: 136.6rem;
+
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include wrapper;
   }
 
   &__hamburger {
@@ -28,7 +29,7 @@
     position: absolute;
     right: 2rem;
     top: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-50%);
     z-index: 3;
     cursor: pointer;
     @include mq(tablet-large) {

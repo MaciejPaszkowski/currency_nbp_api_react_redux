@@ -14,13 +14,13 @@ const Header = () => {
 
   const styles = {
     bar1: {
-      transform: opened && "rotate(-45deg) translate(-11px, 11px)",
+      transform: opened && "rotate(-405deg) translate(-8px, 7px)",
     },
     bar2: {
-      opacity: opened && 0,
+      transform: opened && "translate(100px,0)",
     },
     bar3: {
-      transform: opened && "rotate(45deg) translate(-11px, -11px)",
+      transform: opened && "rotate(405deg) translate(-8px, -8px)",
     },
   };
 
