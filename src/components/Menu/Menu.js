@@ -24,7 +24,7 @@ const Menu = ({ opened, closeMenu }) => {
         <li className="menu__item" onClick={closeMenu}>
           <NavLink
             exact
-            to="/setupCurrencies"
+            to="/favourites"
             className="menu__link"
             activeClassName="menu__link--active"
           >

@@ -1,9 +1,9 @@
 import React from "react";
-import Currency from "../Currency";
+import Favourite from "../Favourite";
 import { v4 as uuidv4 } from "uuid";
-import "./CurrenciesList.scss";
+import "../CurrenciesList/CurrenciesList.scss";
 
-const CurrenciesList = ({ data, icon, onClick }) => {
+const FavouritesList = ({ data, icon }) => {
   return (
     <table className="table">
       <thead className="table__thead">
@@ -15,17 +15,11 @@ const CurrenciesList = ({ data, icon, onClick }) => {
       </thead>
       <tbody className="table__tbody">
         {data.map((currency) => (
-          // { console.log(currency) }
-          <Currency
-            key={uuidv4()}
-            data={currency}
-            icon={icon}
-            onClick={onClick}
-          />
+          <Favourite key={uuidv4()} data={currency} icon={icon} />
         ))}
       </tbody>
     </table>
   );
 };
 
-export default CurrenciesList;
+export default FavouritesList;
