@@ -7,7 +7,6 @@ import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 const Favourites = ({ favourites }) => {
   return (
     <section className="currencies">
-      <h1>jestem tu</h1>
       <FavouritesList data={favourites} icon={faWindowClose} />
     </section>
   );

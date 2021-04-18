@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faBan } from "@fortawesome/free-solid-svg-icons";
 import "./Modal.scss";
 
-const MyModal = ({ active, setActive, confirm, abort }) => {
+const Modal = ({ active, setActive, confirm, abort }) => {
   return (
     <div
       className={clsx(active && "active", "modal")}
@@ -34,4 +34,4 @@ const MyModal = ({ active, setActive, confirm, abort }) => {
   );
 };
 
-export default MyModal;
+export default Modal;

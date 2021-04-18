@@ -45,4 +45,5 @@ Favourite.propTypes = {
   }),
 };
 
+export { Favourite };
 export default connect(null, mapDispatchToProps)(Favourite);
